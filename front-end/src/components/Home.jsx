@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/Home.css';
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="landingPage text-center" style = {{height:"100vh"}}>
@@ -8,15 +9,11 @@ function Home() {
                 <h3 className="p-2"> Add gifts from any website. <br/> Share with anyone. </h3>
                 <p className="text-muted"> Available now </p> 
                 
-                <form action="/login">
-                    <button className="btn btn-primary">Log in</button>
-                </form>
+                <Link to="/login" className="btn btn-primary">Login</Link>
                 
-                <span className="text-muted largeFont">or</span>
+                <h4 className="text-muted largeFont">or</h4>
                 
-                <form action="/register">
-                    <button className="btn btn-primary">Register</button>
-                </form>
+                <Link to="/register" className="btn btn-primary">Register</Link>
             </section>
         </div>
   );
