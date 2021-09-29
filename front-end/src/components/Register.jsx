@@ -17,7 +17,7 @@ function Register() {
                 <article class="text-center">
                 <a href="/login" class='p-3'>Login?</a>
                 <br/>
-                <a href="/" class='p-2'>Back</a>
+                <a href="/" class='p-2'>Home</a>
                 </article>
             </section>
         </form>
