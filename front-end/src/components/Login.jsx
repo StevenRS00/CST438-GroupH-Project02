@@ -3,6 +3,7 @@ import '../css/Login.css';
 function Login() {
   return (
         <div className="loginFormPage">
+            
         <p className="heading text-dark" align="center">Log in</p>
         
         <input type="username" id="username" name="username" placeholder="Enter username"/>
@@ -20,7 +21,7 @@ function Login() {
         <article className="text-center p-4">
             <a href="/register" className='p-3'>Register?</a>
             <br/>
-            <a href="/" className='p-2'>Back</a>
+            <a href="/" className='p-2'>Home</a>
         </article>
     </div>
   );
