@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import './css/Welcome.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navigation, Footer, Home} from "./components";
 function App() {
   return (
-    <div className="landingPage text-center">
-            <section className="text-light WelcomeCard1">
-                <h1> Wishlist </h1>
-                <h3 className="p-2"> Add gifts from any website. <br/> Share with anyone. </h3>
-                <p className="text-muted"> Available now </p> 
-                
-                <form action="/login">
-                    <button className="btn btn-primary">Log in</button>
-                </form>
-                
-                <span className="text-muted largeFont">or</span>
-                
-                <form action="/register">
-                    <button className="btn btn-primary">Register</button>
-                </form>
-            </section>
-        </div>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route path="/" exact component={() => <Home />} />
+          <Navigation/>
+          {/* <Route path="/about" exact component={() => <About />} />
+          <Route path="/contact" exact component={() => <Contact />} /> */}
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
