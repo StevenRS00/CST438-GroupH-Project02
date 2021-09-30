@@ -9,8 +9,8 @@ class Item(models.Model):
 
 class User(models.Model):
     username = models.CharField(max_length=50)
-    password = models.TextField(max_length=30)
-    fullname = models.TextField(max_length=50)
+    password = models.CharField(max_length=30)
+    fullname = models.CharField(max_length=50)
     is_admin = models.BooleanField(default=False)
 
 class ItemList(models.Model):
