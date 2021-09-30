@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Item(models.Model):
     item_name = models.CharField(max_length=50)
-    description = models.TextField(blank=True, max_length=250)
+    description = models.TextField(max_length=250)
     image_url = models.URLField(blank=True, max_length=100)
     item_url = models.URLField(blank=True, max_length=100)
 
