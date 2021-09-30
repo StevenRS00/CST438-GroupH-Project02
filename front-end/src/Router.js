@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as ReactRouter, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Home, Login, Register} from "./components";
-function App() {
+
+function Router() {
   return (
-    <div className="App">
-      <Router>
+    <div>
+      <ReactRouter>
         <Switch>
           <Route path="/" exact component={() => <Home />} />
           <Route path="/login" exact component={() => <Login />} />
@@ -14,9 +15,9 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} /> */}
         </Switch>
         <Footer />
-      </Router>
+      </ReactRouter>
     </div>
   );
 }
 
-export default App;
+export default Router;
