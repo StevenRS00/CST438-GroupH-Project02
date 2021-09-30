@@ -10,9 +10,9 @@ class Item(models.Model):
 class User(models.Model):
     username = models.CharField(max_length=50)
     password = models.TextField(max_length=30)
-    fullname = models.URLField(max_length=50)
+    fullname = models.TextField(max_length=50)
     is_admin = models.BooleanField(default=False)
 
 class ItemList(models.Model):
-    item_ids = models.ManyToManyField(Item)
-    user_ids = models.ManyToManyField(User)
+    items = models.ManyToManyField(Item)
+    users = models.ManyToManyField(User)
