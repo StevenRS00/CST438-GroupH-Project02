@@ -4,7 +4,12 @@
     width: 50%;
 }
 .center {
+<<<<<<< HEAD
     /* width: 70%; */
+=======
+    margin: auto;
+    width: 70%;
+>>>>>>> 795fcf6 (Finishing layout of page)
     padding-top: 10%;
     padding-bottom: 10%;
   }
