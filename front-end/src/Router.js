@@ -10,6 +10,8 @@ function Router() {
           <Route path="/" exact component={() => <Home />} />
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/register" exact component={() => <Register />} />
+          <Route path="/AboutUs" exact component={() => <aboutUs />} />
+          <Route path="/Description" exact component={() => <description />} />
           <Navigation/>
           {/* <Route path="/about" exact component={() => <About />} />
           <Route path="/contact" exact component={() => <Contact />} /> */}
