@@ -1,4 +1,3 @@
-import React from "react";
 import '../css/Home.css';
 import { Link, withRouter } from "react-router-dom";
 import * as ReactBootStrap from 'react-bootstrap';
