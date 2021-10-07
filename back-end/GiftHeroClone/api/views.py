@@ -6,13 +6,13 @@ from .models import Item, User, ItemList
 # Create your views here.
 
 class ItemView(generics.CreateAPIView):
-    queryset = Item.obects.all()
+    queryset = Item.objects.all()
     serializer_class = ItemSerializer
 
 class UserView(generics.CreateAPIView):
-    queryset = User.obects.all()
+    queryset = User.objects.all()
     serializer_class = UserSerializer
 
 class ItemListView(generics.CreateAPIView):
-    queryset = ItemList.obects.all()
+    queryset = ItemList.objects.all()
     serializer_class = ItemListSerializer

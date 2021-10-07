@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'api.apps.ApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'GiftHeroClone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'USER': env('USER'),
+        'USER': env('UN'),
         'NAME': env('DB_NAME'),
         'PASSWORD': env('PASSWORD'),
         'HOST': env('HOSTNAME'),            
