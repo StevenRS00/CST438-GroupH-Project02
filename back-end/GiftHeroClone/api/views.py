@@ -16,3 +16,4 @@ class UserView(generics.CreateAPIView):
 class ItemListView(generics.CreateAPIView):
     queryset = ItemList.objects.all()
     serializer_class = ItemListSerializer
+    
