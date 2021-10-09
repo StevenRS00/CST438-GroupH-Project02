@@ -1,1 +1,1 @@
-web: gunicorn --chdir backend/GiftHeroClone GiftHeroClone.wsgi
+web: gunicorn --chdir backend GiftHeroClone.wsgi
