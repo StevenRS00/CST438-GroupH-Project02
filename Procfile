@@ -1,1 +1,1 @@
-web: gunicorn --chdir GiftHeroClone GiftHeroClone.wsgi
+web: gunicorn --pythonpath GiftHeroClone GiftHeroClone.wsgi
