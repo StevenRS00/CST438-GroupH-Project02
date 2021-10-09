@@ -1,1 +1,1 @@
-web: gunicorn CST438-GroupH-Project02.wsgi
+web: gunicorn GiftHeroClone.wsgi
