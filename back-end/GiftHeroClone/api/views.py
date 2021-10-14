@@ -9,7 +9,9 @@ from rest_framework.response import Response
 
 class ItemView(generics.CreateAPIView):
     serializer_class = ItemSerializer
-    queryset = Item.objects.all()
+    def get(self, request, *args, **kwargs):
+        queryset = Item.objects.all()
+        return Response(queryset, status=200)
     
 class SpecificItemView(generics.CreateAPIView):
     serializer_class = ItemSerializer
