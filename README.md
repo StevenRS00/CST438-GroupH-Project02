@@ -10,3 +10,8 @@ ERD: https://lucid.app/lucidchart/b65fa176-9d8d-404e-a1df-8ec43408c6f2/edit?view
 
 Use this command to download all pip dependencies(don't forget to use a virtual env):
     ```python -m pip install -r requirements.txt```
+
+Contributors: Alexis Sanchez (http://github.com/jwlexi)
+              Steven Schreiber (http://github.com/StevenRS00)
+              Michael Velasquez (http://github.com/tgmike)
+              Ashley Garcia (http://github.com/ashgarc20)

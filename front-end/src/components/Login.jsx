@@ -1,7 +1,6 @@
-import React from "react";
 import '../css/Login.css';
 import { Redirect, useHistory} from 'react-router-dom';
-
+import React from 'react'
 function Login() {
   let history = useHistory();
   function loginUser() {

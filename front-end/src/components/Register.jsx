@@ -1,5 +1,5 @@
-import React from "react";
 import '../css/Register.css';
+import React from 'react'
 function Register() {
   return (
     <div>
