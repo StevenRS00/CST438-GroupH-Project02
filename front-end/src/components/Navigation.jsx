@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-
+import React from 'react'
 function Navigation(props) {
   return (
     <div className="navigation">

@@ -1,7 +1,13 @@
 import React from "react";
 import '../css/Home.css';
 import { Link } from "react-router-dom";
+<<<<<<< Updated upstream
 
+=======
+// import * as ReactBootStrap from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import React from 'react'
+>>>>>>> Stashed changes
 function Home() {
   return (
     <div className="landingPage text-center" style = {{height:"100vh"}}>

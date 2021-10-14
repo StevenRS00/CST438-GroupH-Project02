@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 import React from "react";
 
+=======
+import { Link, withRouter } from "react-router-dom";
+import React from 'react'
+>>>>>>> Stashed changes
 function Footer() {
   return (
     <div className="footer">
