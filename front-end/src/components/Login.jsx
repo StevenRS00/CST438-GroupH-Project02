@@ -1,21 +1,20 @@
 import React from "react";
 import '../css/Login.css';
-import React from 'react';
 import { Redirect, useHistory} from 'react-router-dom';
 
 function Login() {
   let history = useHistory();
   function loginUser() {
     alert("user clicked button");
-    let userN = document.getElementById("#username").value;
-    let passW = document.getElementById("#password").value;
-    console.log(document.getElementById("#password").value);
-    if(userN === "admin" && passW === "admin") {
-        alert("this is working");
-        return <Redirect to='/editUser' />
-        // alert("this is working");
-        // history.push('/editUser');
-    }
+    // let userN = document.getElementById("#username").value;
+    // let passW = document.getElementById("#password").value;
+    // console.log(document.getElementById("#password").value);
+    // if(userN === "admin" && passW === "admin") {
+    //     alert("this is working");
+    //     return <Redirect to='/editUser' />
+    //     // alert("this is working");
+    //     // history.push('/editUser');
+    // }
   }
   return (
     <div className="loginFormPage">   
