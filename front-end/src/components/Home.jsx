@@ -2,7 +2,7 @@ import '../css/Home.css';
 import { Link, withRouter } from "react-router-dom";
 import * as ReactBootStrap from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-
+import React from 'react';
 function Home() {
   return (
     <div className="App">
