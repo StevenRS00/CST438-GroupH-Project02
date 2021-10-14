@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as ReactRouter, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, Login, Register, UserWishlist} from "./components";
+import { Navigation, Footer, Home, Login, Register, editUserProfile, UserWishlist} from "./components";
 
 function Router() {
   return (
@@ -11,6 +11,7 @@ function Router() {
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/register" exact component={() => <Register />} />
           <Route path="/UserWishlist" exact component={() => <UserWishlist />} />
+          <Route path = "/editUser" component = {editUserProfile}/>
           <Navigation/>
         </Switch>
         <Footer />
