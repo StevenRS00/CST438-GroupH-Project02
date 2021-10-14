@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath backend/GiftHeroClone GiftHeroClone.wsgi
+web: gunicorn GiftHeroClone.wsgi
