@@ -1,7 +1,6 @@
-import React from "react";
 import '../css/Login.css';
 import { Redirect, useHistory} from 'react-router-dom';
-
+import React from 'react'
 export default class login extends React.Component {
 
    constructor(props) {

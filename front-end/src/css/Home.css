@@ -1,5 +1,36 @@
-.landingPage {
-    background-color: black;
-    padding-top: 10%;
-    padding-bottom: 20%;
+p{
+    font-size: 20px;
+    color: black;
+}
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.main-heading {
+    color: rebeccapurple;
+    font-size: 26px;
+}
+.headingSub {
+    font-size: 26px;;
+}
+.underline {
+    height: 04px;
+    width: 4rem;
+    background-color: #1266F1;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+.bg-c-light{
+    background-color: white;
+}
+.site_info{
+    font-size: 14px;
+    color: white;
+}
+.footer a{
+    color: white;
+    text-decoration: none !important;
+}
+.footer a:hover{
+    color:grey;;
 }
