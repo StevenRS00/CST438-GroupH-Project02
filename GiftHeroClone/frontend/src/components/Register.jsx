@@ -1,4 +1,4 @@
-import '../css/Register.css';
+import '../../static/css/Register.css';
 import React from 'react'
 function Register() {
   return (

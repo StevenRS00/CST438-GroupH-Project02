@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as ReactRouter, Route, Switch, Redirect} from "react-router-dom";
-import { Navigation, Footer, Home, Login, Register, editUserProfile, UserWishlist} from "./components";
+import { Navigation, Footer, Home, Login, Register, editUserProfile, UserWishlist} from ".";
 
-function Router() {
+export default function Router() {
   return (
     <div>
       <ReactRouter>
@@ -20,5 +20,5 @@ function Router() {
     </div>
   );
 }
-
-export default Router;
+const appDiv = document.getElementById("app");
+render(<Router />, appDiv);

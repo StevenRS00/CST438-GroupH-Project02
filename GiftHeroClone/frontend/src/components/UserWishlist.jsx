@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/UserWishlist.css';
+import '../../static/css/UserWishlist.css';
 import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';

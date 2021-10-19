@@ -1,82 +1,78 @@
 import '../../static/css/Home.css';
 import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
-import React, {Component} from 'react';
-import {render} from 'react-dom';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
+export default function Home() {
+  return (
+    <div className="App">
 
-  render() {
-    return (
-      <div className="App">
-  
-        {/* Home Page Nav Bar */}
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
-          <div class="container">
-            <Link class="navbar-brand" to="/">
-              Wishlist
-            </Link>
-  
-            <div>
-              <ul class="navbar-nav ml-auto">
-                <li>
-                  <Link to="/login" className="btn btn-primary">Login</Link>
-                </li>
-                <li> -
-                </li>
-                <li>
-                <Link to="/register" className="btn btn-primary">Register</Link>
-                </li>
-              </ul>
-            </div>
+      {/* Home Page Nav Bar */}
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+          <Link class="navbar-brand" to="/">
+            Wishlist
+          </Link>
+
+          <div>
+            <ul class="navbar-nav ml-auto">
+              <li>
+                <Link to="/login" className="btn btn-primary">Login</Link>
+              </li>
+
+              <li> -
+              </li>
+
+              <li>
+              <Link to="/register" className="btn btn-primary">Register</Link>
+              </li>
+            </ul>
           </div>
-        </nav>
-  
+        </div>
+      </nav>
+
       {/* Home Page Carousel */}
       <div>
-      <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://cdn.shopify.com/s/files/1/1324/9125/files/wishlist-banner.jpg?10898251441926500954"
-          width="400" height="700"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3 style={{ color: 'grey' }}>The Best WishList Ever</h3>
-          <p style={{ color: 'black' }}>Add gifts from any website. Share with anyone.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://www.qeretail.com/blog/wp-content/uploads/2017/08/wishlist.png"
-          width="400" height="700"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h3 style={{ color: 'black' }}>Build.Add.Share.</h3>
-          <p style={{ color: 'black' }}>Create as many wish list as you like. Easy add gifts from websites. Share your wishlist with others.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://assets.justinmind.com/wp-content/uploads/2017/12/wishlist-app-best-wishlist-app-for-ios-header-768x245.png"
-          width="400" height="700"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h3 style={{ color: 'black' }}>Easy to Add, Easy to Manage</h3>
-          <p style={{ color: 'black' }}>With our wishlist you can keep everything you want in one place from any device.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+        <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://cdn.shopify.com/s/files/1/1324/9125/files/wishlist-banner.jpg?10898251441926500954"
+            width="400" height="700"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3 style={{ color: 'grey' }}>The Best WishList Ever</h3>
+            <p style={{ color: 'black' }}>Add gifts from any website. Share with anyone.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://www.qeretail.com/blog/wp-content/uploads/2017/08/wishlist.png"
+            width="400" height="700"
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3 style={{ color: 'black' }}>Build.Add.Share.</h3>
+            <p style={{ color: 'black' }}>Create as many wish list as you like. Easy add gifts from websites. Share your wishlist with others.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://assets.justinmind.com/wp-content/uploads/2017/12/wishlist-app-best-wishlist-app-for-ios-header-768x245.png"
+            width="400" height="700"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3 style={{ color: 'black' }}>Easy to Add, Easy to Manage</h3>
+            <p style={{ color: 'black' }}>With our wishlist you can keep everything you want in one place from any device.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        </Carousel>
       </div>
-      
       <section className="section">
         <div className="container">
           <div className="row">
@@ -157,10 +153,6 @@ export default class Home extends Component {
           </div>
         </div>
       </section>
-      </div>
-    );
-  }
+    </div>
+  );
 }
-
-const appDiv = document.getElementById("app");
-render(<Home />, appDiv);

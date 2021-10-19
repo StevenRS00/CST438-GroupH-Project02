@@ -1,4 +1,4 @@
-import '../css/Login.css';
+import '../../static/css/Login.css';
 import { Redirect, useHistory} from 'react-router-dom';
 import React from 'react'
 export default class login extends React.Component {

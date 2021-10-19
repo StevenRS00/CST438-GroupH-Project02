@@ -1,4 +1,4 @@
-import styles from '../css/editUserProfile.module.css';
+import styles from '../../static/css/editUserProfile.module.css';
 import React from 'react'
 function editUserProfile() {
   return (
