@@ -2,7 +2,8 @@ import * as React from "react";
 
 function Item({item}) {
     return (
-      <div key = {item.id}> 
+      <div> 
+        {/* Key id = {item.id} <br/> */}
         Product: {item.product} <br/>
         Price: ${item.price}  <br/>
         Description: {item.Description} <br/>

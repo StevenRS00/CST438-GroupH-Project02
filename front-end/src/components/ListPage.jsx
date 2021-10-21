@@ -1,17 +1,6 @@
 import * as React from "react";
-
+import Item from './Item'
 export default class ListPage extends React.Component {
-    state = {
-      loading: true,
-      person: null
-    };
-
-    async componentDidMount() {
-      const url = "https://api.randomuser.me/";
-      const response = await fetch(url);
-      const data = await response.json();
-      this.setState({person: data.results[0], loading: false});
-    }
 
     render() {
       const list = [
@@ -38,32 +27,14 @@ export default class ListPage extends React.Component {
         }
       ]
 
-      const displayList = list.map(item => 
-      <div key = {item.id}> 
-        Product: {item.product} <br/>
-        Price: ${item.price}  <br/>
-        Description: {item.Description} <br/>
-        <img src ={item.Image} height= "250px"/>
-        <hr/>
-      </div>)
+      const displayList = list.map(x => <Item key = {x.id} item = {x}/>) // Item is the component name and 'item' is the name of the item we're passing in
 
       return (
-          // <div id = "pictures">  
-          //   {this.state.loading || !this.state.person ? (
-          //   <div className = "text-center"> loading... </div> )
-          //   : ( 
-          //     <div class = "text-center" style={{"color": "red", "backgroundColor": "lightBlue", "font-size": "51px"}}> 
-          //       <div> {this.state.person.name.title} </div>
-          //       <div> {this.state.person.name.first} </div>
-          //       <div> {this.state.person.name.last} </div>
-          //       <div> <img src = {this.state.person.picture.large} /> </div>
-          //     </div>
-          //   )
-          //   }
-          // </div>
+
         <div className = "text-center">
           <h1> List page </h1>
-          <div> {displayList}</div>
+          <div className = "items"> 
+          {displayList} </div>
         </div>
       );
     }
