@@ -101,7 +101,7 @@ function Home() {
           {/* Steven */}
           <div className="col-md-3">
             <div className="card shadow">
-              <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFI9M-AN1Hx1g/profile-displayphoto-shrink_800_800/0/1575409503824?e=1634774400&v=beta&t=pUKoPdqi4_wrcWGQBBHDG9QwuCWrjQ6fjSo9jpx8EFY" className="w-100 border-bottom" alt="Testing1" />
+              <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFI9M-AN1Hx1g/profile-displayphoto-shrink_800_800/0/1575409503824?e=1640217600&v=beta&t=90wOQtYCZrnBEQ8JixRuVndn01GV-EOxta8D0jwF2qU" className="w-100 border-bottom" alt="Testing1" />
               <div className="card-body">
                 <h6>Steven </h6>
                 <div className="underline"></div>
@@ -114,7 +114,7 @@ function Home() {
           {/* Alexis */}
           <div className="col-md-3">
             <div className="card shadow">
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQFHYiNqFoPItg/profile-displayphoto-shrink_800_800/0/1612123763871?e=1634774400&amp;v=beta&amp;t=-wErQfPwqcfDyE7CQ7jCXp4MeXJjMlgRPTjA4XjOzGQ" className="w-100 border-bottom" alt="Testing1" />
+              <img src="https://media-exp1.licdn.com/dms/image/C5603AQFHYiNqFoPItg/profile-displayphoto-shrink_800_800/0/1612123763871?e=1640217600&v=beta&t=XNaqa-SrRuuZFt6x_1i0Tuq5uZsFtOL8Mks27CHDXrA" className="w-100 border-bottom" alt="Testing1" />
               <div className="card-body">
                 <h6>Alexis </h6>
                 <div className="underline"></div>
