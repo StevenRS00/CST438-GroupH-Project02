@@ -1,1 +1,1 @@
-web: gunicorn GiftHeroClone.wsgi
+web: sh ./back-end/GiftHeroClone/run.sh
