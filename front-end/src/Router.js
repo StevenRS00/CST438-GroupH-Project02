@@ -11,7 +11,7 @@ function Router() {
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/register" exact component={() => <Register />} />
           <Route path="/UserWishlist" exact component={() => <UserWishlist />} />
-          <Route path="/ListPage" exact component={() => <ListPage />} />
+          <Route path="/list" exact component={() => <ListPage />} />
           <Route path="/Admin" exact component={() => <Admin />} />
           <Route path = "/editProfile" component = {editUserProfile}/>
           <Route path="/AdminEditUserProfile" exact component={() => <AdminEditUserProfile />} />
