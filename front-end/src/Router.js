@@ -14,6 +14,7 @@ function Router() {
           <Route path="/Admin" exact component={() => <Admin />} />
           <Route path = "/editUser" component = {editUserProfile}/>
           <Route path="/AdminEditUserProfile" exact component={() => <AdminEditUserProfile />} />
+          <Route render={() => <Redirect to="/"/> } />
           <Navigation/>
         </Switch>
         <Footer />
