@@ -5,3 +5,5 @@ export { default as Login } from "./Login";
 export { default as Register } from "./Register";
 export { default as editUserProfile } from "./editUserProfile";
 export { default as UserWishlist } from "./UserWishlist";
+export { default as Admin } from "./Admin";
+export { default as AdminEditUserProfile } from "./AdminEditUserProfile";
