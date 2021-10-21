@@ -24,12 +24,14 @@ export default class ListPage extends React.Component {
         {
           product: 'Hair dryer',
           price: 20,
-          Description: 'It helps dry your hair faster'
+          Description: 'It helps dry your hair faster',
+          Image: 'https://target.scene7.com/is/image/Target/GUEST_b981d58e-1d8d-45b5-b642-124116b9e4a8?wid=488&hei=488&fmt=pjpeg'
         },
         {
           product: 'Shoes',
           price: 50,
-          Description: 'Size 9'
+          Description: 'Size 9',
+          Image: 'https://res.cloudinary.com/atoms-shoes/image/upload/c_scale,w_1400,q_auto,f_auto/v1622733115/products/shoes/model000/black-white_profile'
         }
       ]
 
@@ -38,9 +40,10 @@ export default class ListPage extends React.Component {
         Product: {item.product} <br/>
         Price: ${item.price}  <br/>
         Description: {item.Description} <br/>
+        <img src ={item.Image} height= "250px"/>
         <hr/>
       </div>)
-      
+
       return (
           // <div id = "pictures">  
           //   {this.state.loading || !this.state.person ? (
@@ -55,9 +58,10 @@ export default class ListPage extends React.Component {
           //   )
           //   }
           // </div>
-          
-        <div class = "text-center"> {displayList}</div>
-        
+        <div class = "text-center">
+          <h1> List page </h1>
+          <div> {displayList}</div>
+        </div>
       );
     }
 }
