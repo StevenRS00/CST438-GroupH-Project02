@@ -6,7 +6,7 @@ export default function Router() {
   return (
     <ReactRouter>
       <Switch>
-        <Route path="/">HELLO</Route>
+        <Route path="/" exact component={() => <Home />} />
         <Route path="/login" exact component={() => <Login />} />
         <Route path="/register" exact component={() => <Register />} />
         <Route path="/UserWishlist" exact component={() => <UserWishlist />} />
