@@ -16,18 +16,21 @@ export default class ListPage extends React.Component {
     render() {
       const list = [
         {
+          id: 1,
           product: 'Water bottle',
           price: 1,
           Description: 'A bottle of water',
           Image: 'https://distillata.com/wp-content/uploads/2018/04/Distilled-20-oz.jpg'
         },
         {
+          id: 2,
           product: 'Hair dryer',
           price: 20,
           Description: 'It helps dry your hair faster',
           Image: 'https://target.scene7.com/is/image/Target/GUEST_b981d58e-1d8d-45b5-b642-124116b9e4a8?wid=488&hei=488&fmt=pjpeg'
         },
         {
+          id: 3,
           product: 'Shoes',
           price: 50,
           Description: 'Size 9',
@@ -36,7 +39,7 @@ export default class ListPage extends React.Component {
       ]
 
       const displayList = list.map(item => 
-      <div> 
+      <div key = {item.id}> 
         Product: {item.product} <br/>
         Price: ${item.price}  <br/>
         Description: {item.Description} <br/>
@@ -58,7 +61,7 @@ export default class ListPage extends React.Component {
           //   )
           //   }
           // </div>
-        <div class = "text-center">
+        <div className = "text-center">
           <h1> List page </h1>
           <div> {displayList}</div>
         </div>
