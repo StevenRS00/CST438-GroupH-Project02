@@ -15,8 +15,6 @@ from pathlib import Path
 
 import environ
 import django_heroku
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
 
 # Initialise environment variables
 env = environ.Env()
@@ -54,7 +52,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'GiftHeroClone.middleware.DisableCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -137,7 +134,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'frontend/static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
