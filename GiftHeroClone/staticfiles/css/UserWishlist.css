@@ -1,0 +1,21 @@
+.tempNavBar {
+    padding-bottom: 40px;
+}
+.userImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.d-grid {
+    padding-left: 500px;
+    padding-right: 500px;
+}
+.cont1 {    
+    justify-content: center;
+}
+.wishlistDirectory{
+    position: 'relative';
+height: 500;
+align-items: 'center';
+justify-Content: 'center';
+}
