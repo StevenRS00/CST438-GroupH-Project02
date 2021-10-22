@@ -1,0 +1,2 @@
+cd GiftHeroClone
+gunicorn GiftHeroClone.wsgi
