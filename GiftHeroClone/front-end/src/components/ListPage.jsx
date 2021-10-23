@@ -1,5 +1,6 @@
 import * as React from "react";
 import Item from './Item'
+import {Link} from 'react-router-dom';
 export default class ListPage extends React.Component {
 
     render() {
@@ -32,7 +33,13 @@ export default class ListPage extends React.Component {
       return (
 
         <div className = "text-center">
+          <div>
           <h1> List page </h1>
+          <Link to= "/editprofile" style = {{float:"right"}}>
+            <button > Edit profile </button>
+          </Link>
+          </div>
+          <br/><br/><br/>
           <div className = "items"> 
           {displayList} </div>
         </div>

@@ -1,8 +1,7 @@
 import '../css/Login.css';
-import { Redirect, useHistory} from 'react-router-dom';
+import { Redirect, useHistory, Link} from 'react-router-dom';
 import React from 'react'
 export default class login extends React.Component {
-
    constructor(props) {
      super(props);
      this.state = {value: ''};
@@ -14,19 +13,20 @@ export default class login extends React.Component {
    }
    handleSubmit(e) {
      if(this.state.value === 'admin') {
-       alert('bark');
+      this.redirectFunc();
       //  history.push('/editUser')
       // props.history.push('/')
      }
      e.preventDefault();
    }
     render() {
+        // let history = useHistory();
         return (
           <div className="loginFormPage">   
           
             <p className="heading text-dark" align="center">Log in</p>
             
-            <input type="username" id="username" name="username" placeholder="Enter username" value={this.state.value} onChange={this.handleChange}/>
+            <input type="username" id="username" name="username" placeholder="Enter username" onChange={this.handleChange}/>
             
             <input type="password" id="password" name="password" placeholder="Enter password" onChange={this.handleChange}/>
             
@@ -35,7 +35,9 @@ export default class login extends React.Component {
             </strong>
             
             <article className="text-center">
-              <button className="btn btn-primary" id="loginBtn" onClick={this.handleSubmit}>Login</button>
+              <Link to="/list">
+              <button className="btn btn-primary" id="loginBtn">Login</button>
+              </Link>
             </article>
             
             <article className="text-center p-4">
