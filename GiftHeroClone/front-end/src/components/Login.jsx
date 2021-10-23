@@ -14,7 +14,7 @@ export default class login extends React.Component {
    handleSubmit(e) {
      if(this.state.value === 'admin') {
       this.redirectFunc();
-      //  history.push('/editUser')
+      //  history.push('/admin')
       // props.history.push('/')
      }
      e.preventDefault();
