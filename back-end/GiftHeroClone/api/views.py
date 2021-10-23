@@ -19,7 +19,22 @@ class LoginView(generics.CreateAPIView):
             login(request, user)
             return Response({"Success": "User is logged in"}, status=200)
         else:
-            return Response({"Error": "No user found"}, status=401)
+            return Response({"Error": "No user found"}, status=404)
+
+class AdminLoginView(generics.CreateAPIView):
+    serializer_class = UserSerializer
+    def post(self, request):
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            if user.is_admin:
+                login(request, user)
+                return Response({"Success": "User is logged in"}, status=200)
+            else:
+                return Response({"Unauthorized": "User is not an admin"}, status=401)
+        else:
+            return Response({"Error": "No user found"}, status=404)
 
 class LogoutView(generics.CreateAPIView):
     serializer_class = UserSerializer
@@ -120,6 +135,7 @@ class DeleteUserView(APIView):
         try:
             queryset = User.objects.get(id=id)
             queryset.delete()
+            logout(request)
             return Response(status=200)
         except User.DoesNotExist:
             return Response(status=404)
@@ -201,4 +217,26 @@ class CreateItemListView(APIView):
             item_list.save()
             return Response(ItemListSerializer(item_list).data, status=status.HTTP_201_CREATED)
         except User.DoesNotExist:
-            return Response({'Does Not Exist': 'User does not exist'},status=404) 
+            return Response({'Does Not Exist': 'User does not exist'},status=404)
+
+class AddItemToListView(APIView):
+    serializer_class = ItemListSerializer
+    item_serializer_class = ItemSerializer
+    def post(self, request, list_id=0, item_id=0, *args, **kwargs):
+        try:
+            list_queryset = ItemList.objects.filter(id=list_id)
+            if list_queryset.exists():
+                item_queryset = Item.objects.filter(id=item_id)
+                if item_queryset.exists():
+                    item_list = ItemList.objects.get(id=list_id)
+                    item = Item.objects.get(id=item_id)
+                    item_list.items.add(item)
+                    item_list.save()
+                    return Response(ItemListSerializer(item_list).data, status=200)
+                else:
+                    return Response({"DNE": "Item was not found"}, status=404)
+            else:
+                return Response({"DNE": "WishList was not found"}, status=404)
+        except ItemList.DoesNotExist:
+            return Response(status=404)
+ 
