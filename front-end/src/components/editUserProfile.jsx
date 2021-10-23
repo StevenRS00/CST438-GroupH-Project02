@@ -1,8 +1,17 @@
 import styles from '../css/editUserProfile.module.css';
 import React from 'react'
+import {Link} from 'react-router-dom';
 function editUserProfile() {
   return (
-    <div class = {styles.center}> 
+    <div class = {styles.center}>
+      <div style = {{float: "right"}}> 
+        <Link to="/list">
+          <button> List page </button>
+        </Link>
+        <Link to="/">
+          <button> Home </button>
+        </Link>
+        </div> 
       <h1 class = "text-center"> Edit Profile </h1>
       <div class="container">
           <div class="row align-items-start">
@@ -15,7 +24,7 @@ function editUserProfile() {
                     <form>
                       <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="email" class="form-control" id="newName" aria-describedby="emailHelp" placeholder="Enter new name"/>
+                        <input type="email" class="form-control" id="newName" aria-describedby="emailHelp" placeholder="Enter new username"/>
                         <small id="emailHelp" class="form-text text-muted"></small>
                       </div>
                       <div class="form-group">
