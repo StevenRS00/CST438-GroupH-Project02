@@ -17,8 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
 
+view = TemplateView.as_view(template_name='index.html')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('', TemplateView.as_view(template_name='index.html'))
+    path('', view),
+    path('login', view),
+    path('register', view),
+    path('list', view),
+    path('admin', view),
+    path('editProfile', view),
+    path('adminEditUserProfile', view),
 ]

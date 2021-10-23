@@ -10,11 +10,11 @@ function Router() {
           <Route path="/" exact component={() => <Home />} />
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/register" exact component={() => <Register />} />
-          <Route path="/UserWishlist" exact component={() => <UserWishlist />} />
+          <Route path="/userWishlist" exact component={() => <UserWishlist />} />
           <Route path="/list" exact component={() => <ListPage />} />
-          <Route path="/Admin" exact component={() => <Admin />} />
+          <Route path="/admin" exact component={() => <Admin />} />
           <Route path = "/editProfile" exact component = {editUserProfile}/>
-          <Route path="/AdminEditUserProfile" exact component={() => <AdminEditUserProfile />} />
+          <Route path="/adminEditUserProfile" exact component={() => <AdminEditUserProfile />} />
           <Route render={() => <Redirect to="/"/> } />
           <Navigation/>
         </Switch>
