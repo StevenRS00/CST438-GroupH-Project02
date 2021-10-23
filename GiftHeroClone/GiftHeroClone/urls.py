@@ -22,11 +22,11 @@ view = TemplateView.as_view(template_name='index.html')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('/', view),
-    path('/login', view),
-    path('/register', view),
-    path('/list', view),
-    path('/admin', view),
-    path('/editProfile', view),
-    path('/adminEditUserProfile', view),
+    path('', view),
+    path('login', view),
+    path('register', view),
+    path('list', view),
+    path('admin', view),
+    path('editProfile', view),
+    path('adminEditUserProfile', view),
 ]

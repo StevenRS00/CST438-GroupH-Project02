@@ -13,7 +13,7 @@ function Router() {
           <Route path="/userWishlist" exact component={() => <UserWishlist />} />
           <Route path="/list" exact component={() => <ListPage />} />
           <Route path="/admin" exact component={() => <Admin />} />
-          <Route path = "/editProfile" exact component = {editUserProfile}/>
+          <Route path="/editProfile" exact component = {editUserProfile}/>
           <Route path="/adminEditUserProfile" exact component={() => <AdminEditUserProfile />} />
           <Route render={() => <Redirect to="/"/> } />
           <Navigation/>
