@@ -1,1 +1,1 @@
-web: sh ./back-end/GiftHeroClone/run.sh
+web: sh ./GiftHeroClone/run.sh
